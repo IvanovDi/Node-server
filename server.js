@@ -58,6 +58,12 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        linkToProject: 'https://github.com/IvanovDi/Node-server'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Unable to handle request'
