@@ -60,7 +60,8 @@ app.get('/', (req, res) => {
 
 app.get('/project', (req, res) => {
     res.render('project.hbs', {
-        linkToProject: 'https://github.com/IvanovDi/Node-server'
+        linkToProject: 'https://github.com/IvanovDi/Node-server',
+        pageTitle: 'Project Page'
     });
 });
 
